@@ -1,0 +1,26 @@
+.bg-light{
+    background-color: #f5c542 !important;
+}
+.dropdown-menu{
+    height: 350px;
+    overflow-x: scroll;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    margin: 6% 3%;
+    display: inline-block;
+}
+.card{
+    margin-right: 3%;
+   
+}
+.card-img-top{
+    height: 250px;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}

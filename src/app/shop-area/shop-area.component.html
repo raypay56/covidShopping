@@ -1,0 +1,21 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Covid-19 ShopSpring</a>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Currency
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+            <a class="dropdown-item" *ngFor="let code of keys; let i = index" (click)="changeCurrency(i)">{{code}}</a>
+        </div>
+    </div>
+</nav>
+
+<div class="card-container" *ngFor="let product of productList">
+    <div class="card" style="width: 18rem;">
+        <img src="{{product.img}}" class="card-img-top" alt="{{product.alt}}">
+        <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-text">{{product.price | currency: newCurrency}}</p>
+        </div>
+    </div>
+</div>
